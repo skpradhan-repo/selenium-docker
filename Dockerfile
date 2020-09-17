@@ -5,7 +5,7 @@ RUN apk add curl jq
 # Workspace
 WORKDIR /usr/share/samsoft
 
-ADD target/selenium-docker.jar selenium-docker.jar
+ADD /home/centos8/jenkins/workspace/SELENIUM_DOCKER_BUILD@2/target/selenium-docker.jar selenium-docker.jar
 
 ADD target/selenium-docker-tests.jar selenium-docker-tests.jar
 
