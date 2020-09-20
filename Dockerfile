@@ -5,7 +5,7 @@ RUN apk add curl jq
 # Workspace
 WORKDIR /usr/share/samsoft
 
-ADD ["./target/selenium-docker.jar", "selenium-docker.jar"]
+ADD ./target/selenium-docker.jar selenium-docker.jar
 
 ADD ./target/selenium-docker-tests.jar selenium-docker-tests.jar
 
