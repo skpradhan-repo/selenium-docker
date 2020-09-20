@@ -15,7 +15,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                	app = docker.build("samareshpro/selenium-docker")
+                	app = docker.build("samareshpro/selenium-docker", "/var/lib/docker/tmp/")
                 }
             }
         }
